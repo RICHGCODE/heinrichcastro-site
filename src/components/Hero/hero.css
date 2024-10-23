@@ -1,0 +1,108 @@
+/* Hero Section Styling */
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--bg-color); /* Dark background */
+    padding: 0 50px;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    position: relative;
+}
+
+/* Left Side Text */
+.hero-text {
+    flex: 1;
+    color: var(--text-color);
+    padding-right: 40px;
+}
+
+.greeting {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.name {
+    color: #00ccff; /* Bright Blue */
+}
+
+.title {
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #00ccff;
+    position: relative;
+}
+
+.dot {
+    color: #00ccff;
+}
+
+.description {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+/* Hero Buttons */
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.btn {
+    padding: 10px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #00ccff;
+    color: #1c1c1e;
+}
+
+.btn-primary:hover {
+    background-color: #0099cc;
+}
+
+.btn-secondary {
+    border: 2px solid #00ccff;
+    color: #00ccff;
+    background-color: transparent;
+}
+
+.btn-secondary:hover {
+    background-color: #00ccff;
+    color: #1c1c1e;
+}
+
+/* Right Side Image with Glowing Effect */
+.hero-image {
+    flex: 1;
+    position: relative;
+    text-align: center;
+}
+
+.glowing-img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 10px solid #00ccff;
+    filter: drop-shadow(2px 2px 20px #00ccff);
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.glowing-img:hover {
+    transform: scale(1.05);
+}
+

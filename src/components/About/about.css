@@ -1,0 +1,8 @@
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #2c8900; 
+    padding: 0 50px;
+}
