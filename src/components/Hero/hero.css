@@ -99,10 +99,23 @@
     border: 10px solid #00ccff;
     filter: drop-shadow(2px 2px 20px #00ccff);
     object-fit: cover;
-    transition: transform 0.3s ease;
+    transform-origin: center;
+    animation: floating 2s ease-in-out infinite;
 }
 
 .glowing-img:hover {
     transform: scale(1.05);
 }
 
+@keyframes floating {
+    0%, 100% {
+        transform: translateY(0) scale(var(--scale, 1));
+    }
+    50% {
+        transform: translateY(-20px) scale(var(--scale, 1));
+    }
+}
+
+.glowing-img:hover {
+    --scale: 1.05;
+}
