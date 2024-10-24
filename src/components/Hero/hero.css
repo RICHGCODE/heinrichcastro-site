@@ -25,21 +25,38 @@
 }
 
 .greeting {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
+    font-size: 3.5rem;
+    font-weight: 700;
 }
 
 .name {
-    color: #00ccff; /* Bright Blue */
+    color: #00ccff;
+    font-weight: 700;
+    font-size: 3.5rem;
 }
 
 .title {
-    font-size: 4rem;
+    font-size: 2.5rem;
     font-weight: bold;
     margin: 10px 0;
-    color: #00ccff;
+    color: var(--text-color);
     position: relative;
 }
+
+.dynamic-text {
+    color: #00d9ff;
+    font-weight: 600;
+    border-right: 2px solid #00d9ff;
+    animation: blink 0.75s step-end infinite;
+    font-size: 2.5rem; /* Larger for clarity */
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
 
 .dot {
     color: #00ccff;
@@ -62,28 +79,36 @@
     border-radius: 50px;
     text-decoration: none;
     font-weight: 600;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: all 0.3s ease;
+    position: relative;
 }
 
 .btn-primary {
     background-color: #00ccff;
     color: #1c1c1e;
+    box-shadow: 0 0 10px rgba(0, 204, 255, 0);
 }
 
 .btn-primary:hover {
     background-color: #0099cc;
+    box-shadow: 0 0 20px rgba(0, 204, 255, 0.6);
+    transform: translateY(-2px);
 }
 
 .btn-secondary {
     border: 2px solid #00ccff;
     color: #00ccff;
     background-color: transparent;
+    box-shadow: 0 0 10px rgba(0, 204, 255, 0);
 }
 
 .btn-secondary:hover {
     background-color: #00ccff;
     color: #1c1c1e;
+    box-shadow: 0 0 20px rgba(0, 204, 255, 0.6);
+    transform: translateY(-2px);
 }
+
 
 /* Right Side Image with Glowing Effect */
 .hero-image {

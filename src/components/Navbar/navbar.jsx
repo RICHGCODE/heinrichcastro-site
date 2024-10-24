@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './navbar.css';  // Import your Navbar styles
+import moonIcon from '../../assets/moon.png';
+import sunIcon from '../../assets/sun.png';
 
 function Navbar({ activeSection, onLinkClick }) {
     const [theme, setTheme] = useState('light');
@@ -30,11 +32,11 @@ function Navbar({ activeSection, onLinkClick }) {
                     <li><a href="#contact" className={activeSection === 'contact' ? 'active' : ''} onClick={onLinkClick}>Contact</a></li>
                     <li className="dark-mode-toggle">
                         <button onClick={toggleTheme} className="theme-toggle-button">
-                            {theme === 'dark' ? (
-                                <img src="src/assets/moon.png" alt="Moon icon for dark mode" />
-                            ) : (
-                                <img src="src/assets/sun.png" alt="Sun icon for light mode" />
-                            )}
+                        {theme === 'dark' ? (
+                            <img src={moonIcon} alt="Moon icon for dark mode" />
+                        ) : (
+                            <img src={sunIcon} alt="Sun icon for light mode" />
+                        )}
                         </button>
                     </li>
                 </ul>
