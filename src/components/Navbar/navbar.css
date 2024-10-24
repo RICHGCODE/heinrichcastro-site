@@ -26,7 +26,6 @@ nav {
   }
   
 
-  
 /* Logo Effect */
 .logo {
     position: relative;
@@ -40,9 +39,10 @@ nav {
 
 /* Springy Stretchy Bounce Animation */
 .logo:hover {
-    animation: springy-stretchy-bounce 0.8s cubic-bezier(0.5, 1.5, 0.5, 1.5); /* Spring and stretchy effect */
+    animation: springy-stretchy-bounce 0.8s cubic-bezier(0.5, 1.5, 0.5, 1.5);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-}
+  }
+  
 
 /* Keyframes for the springy stretchy bounce animation */
 @keyframes springy-stretchy-bounce {

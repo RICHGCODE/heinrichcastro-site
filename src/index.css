@@ -55,6 +55,36 @@ header {
 }
 
 
+/* Define fade-in keyframes globally */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Global animations for the page */
+
+/* Navbar Fade-in */
+nav {
+  animation: fadeIn 1s ease-in-out;
+  animation-delay: 0.3s;
+  animation-fill-mode: both;
+}
+
+
+/* Hero Section Fade-in */
+.hero-content {
+  animation: fadeIn 1.5s ease-in-out;
+  animation-delay: 0.7s;
+  animation-fill-mode: both;
+}
+
+/* You can also add more elements if needed */
 
 
 
