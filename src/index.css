@@ -86,6 +86,13 @@ nav {
 
 /* You can also add more elements if needed */
 
+.social-links {
+  animation: fadeIn 1s ease-in-out;
+  animation-delay: 0.3s;
+  animation-fill-mode: both;
+
+}
+
 
 
 

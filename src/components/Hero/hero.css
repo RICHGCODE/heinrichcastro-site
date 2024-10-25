@@ -1,146 +1,173 @@
 /* Hero Section Styling */
 .hero-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-color: var(--bg-color); /* Dark background */
-    padding: 0 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: var(--bg-color); /* Dark background */
+  padding: 0 50px;
 }
 
 .hero-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    max-width: 1200px;
-    position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  position: relative;
 }
 
 /* Left Side Text */
 .hero-text {
-    flex: 1;
-    color: var(--text-color);
-    padding-right: 40px;
+  flex: 1;
+  color: var(--text-color);
+  padding-right: 40px;
 }
 
 .greeting {
-    font-size: 3.5rem;
-    font-weight: 700;
+  font-size: 3.5rem;
+  font-weight: 700;
 }
 
 .name {
-    color: #00ccff;
-    font-weight: 700;
-    font-size: 3.5rem;
+  color: #00ccff;
+  font-weight: 700;
+  font-size: 3.5rem;
 }
 
 .title {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin: 10px 0;
-    color: var(--text-color);
-    position: relative;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 10px 0;
+  color: var(--text-color);
+  position: relative;
 }
 
 .dynamic-text {
-    color: #00d9ff;
-    font-weight: 600;
-    border-right: 2px solid #00d9ff;
-    animation: blink 0.75s step-end infinite;
-    font-size: 2.5rem; /* Larger for clarity */
+  color: #00d9ff;
+  font-weight: 600;
+  border-right: 2px solid #00d9ff;
+  animation: blink 0.75s step-end infinite;
+  font-size: 1.5rem; /* Larger for clarity */
 }
 
 @keyframes blink {
-    50% {
-        border-color: transparent;
-    }
+  50% {
+    border-color: transparent;
+  }
 }
 
-
 .dot {
-    color: #00ccff;
+  color: #00ccff;
 }
 
 .description {
-    font-size: 1.2rem;
-    color: var(--text-color);
-    margin-bottom: 20px;
+  font-size: 1.2rem;
+  color: var(--text-color);
+  margin-bottom: 20px;
 }
 
 /* Hero Buttons */
 .hero-buttons {
-    display: flex;
-    gap: 20px;
+  display: flex;
+  gap: 20px;
 }
 
 .btn {
-    padding: 10px 25px;
-    border-radius: 50px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: all 0.3s ease;
-    position: relative;
+  padding: 10px 25px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  position: relative;
 }
 
 .btn-primary {
-    background-color: #00ccff;
-    color: #1c1c1e;
-    box-shadow: 0 0 10px rgba(0, 204, 255, 0);
+  background-color: #00ccff;
+  color: #1c1c1e;
+  box-shadow: 0 0 10px rgba(0, 204, 255, 0);
 }
 
 .btn-primary:hover {
-    background-color: #0099cc;
-    box-shadow: 0 0 20px rgba(0, 204, 255, 0.6);
-    transform: translateY(-2px);
+  background-color: #0099cc;
+  box-shadow: 0 0 20px rgba(0, 204, 255, 0.6);
+  transform: translateY(-2px);
 }
 
 .btn-secondary {
-    border: 2px solid #00ccff;
-    color: #00ccff;
-    background-color: transparent;
-    box-shadow: 0 0 10px rgba(0, 204, 255, 0);
+  border: 2px solid #00ccff;
+  color: #00ccff;
+  background-color: transparent;
+  box-shadow: 0 0 10px rgba(0, 204, 255, 0);
 }
 
 .btn-secondary:hover {
-    background-color: #00ccff;
-    color: #1c1c1e;
-    box-shadow: 0 0 20px rgba(0, 204, 255, 0.6);
-    transform: translateY(-2px);
+  background-color: #00ccff;
+  color: #1c1c1e;
+  box-shadow: 0 0 20px rgba(0, 204, 255, 0.6);
+  transform: translateY(-2px);
 }
-
 
 /* Right Side Image with Glowing Effect */
 .hero-image {
-    flex: 1;
-    position: relative;
-    text-align: center;
+  flex: 1;
+  position: relative;
+  text-align: center;
 }
 
 .glowing-img {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    border: 10px solid #00ccff;
-    filter: drop-shadow(2px 2px 20px #00ccff);
-    object-fit: cover;
-    transform-origin: center;
-    animation: floating 2s ease-in-out infinite;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 10px solid #00ccff;
+  filter: drop-shadow(2px 2px 20px #00ccff);
+  object-fit: cover;
+  transform-origin: center;
+  animation: floating 2s ease-in-out infinite;
 }
 
 .glowing-img:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 @keyframes floating {
-    0%, 100% {
-        transform: translateY(0) scale(var(--scale, 1));
-    }
-    50% {
-        transform: translateY(-20px) scale(var(--scale, 1));
-    }
+  0%,
+  100% {
+    transform: translateY(0) scale(var(--scale, 1));
+  }
+  50% {
+    transform: translateY(-20px) scale(var(--scale, 1));
+  }
 }
 
 .glowing-img:hover {
-    --scale: 1.05;
+  --scale: 1.05;
+}
+.social-links {
+  margin: 15px 0;
+}
+
+.social-links a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: transparent;
+  border: 2px solid #00ccff;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  color: #00ccff;
+  margin: 0.8rem 0.8rem 0.8rem 0;
+  transition: 0.3s ease-in-out;
+  text-decoration: none;
+  animation: fadeIn 1.5s ease-in-out;
+  animation-delay: 0.7s;
+  animation-fill-mode: both;
+}
+
+.social-links a:hover {
+  background: #00ccff;
+  color: var(--bg-color);
+  box-shadow: 0 0 1rem #00ccff;
 }
