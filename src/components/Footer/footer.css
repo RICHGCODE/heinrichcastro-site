@@ -1,15 +1,36 @@
 .footer {
-  background-color: var(--bg-color);
-  color: var(--text-color);
-  padding: 1.5rem 0;
+  position: relative;
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: auto;
+  background: var(--bg-color);
+  transition: all 0.3s ease;
+}
+
+.footer:hover {
+  background: radial-gradient(
+    circle at var(--x, 50%) var(--y, 50%),
+    rgba(0, 200, 255, 0.319) 0%,
+    rgba(0, 115, 255, 0.296) 30%,
+    var(--bg-color) 60%
+  );
 }
 
 .footer-bottom {
+  position: relative;
+  width: 100%;
   text-align: center;
+  z-index: 2;
+  padding: 15px;
+  border-radius: 8px;
 }
 
 .footer-bottom p {
   color: var(--text-color);
   font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
 }
